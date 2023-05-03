@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap');
+
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    .con {
+      max-width: 1440px;
+      margin: 0 auto;
+      background-image: url(/order-summary-component-main/images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      max-width: 1440px;
+      height: 900px;
+      background-color: hsl(225, 100%, 94%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-con {
+      background-color: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      height: 690px;
+      
+    }
+    .card-info {
+      text-align: center;
+    }
+    .card-info h3 {
+      font-size: 2rem;
+      color: hsl(223, 47%, 23%);
+      padding: 1rem 0;
+    }
+    .card-info p {
+      font-size: 1rem;
+      color: hsl(0, 0%, 50%);
+      line-height: 1.7rem;
+    }
+    .Plan-con {
+      display: flex;
+      justify-content: center;
+    }
+    .Plan-box { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      background-color: hsl(225, 100%, 98%);
+      margin: 2rem 0;
+      border-radius: 10px;
+    }
+    .Plan-img {
+      margin-right: 1rem;
+    }
+    .Plan-Price {
+      margin-right: 100px;
+      line-height: 1.5rem;
+    }
+    .Plan-Price p {
+      color: hsl(0, 0%, 50%);
+    }
+    .Plan-change a {
+      font-weight: bold;
+      color: hsl(223, 100%, 30%);
+      transition: 0.3s;
+    }
+    .Plan-change a:hover {
+      text-decoration: none;
+      opacity: 0.7;
+    }
+    .Plan-btn-box {
+      display: grid;
+      place-items: center;
+    }
+    .Payment-btn button {
+      color: #fff;
+      font-weight: bold;
+      background-color: hsl(245, 75%, 52%);
+      padding: 1rem 7rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 0 5px 10px rgba(56, 41, 224, 0.3);
+      transition: 0.3s;
+    }
+    .Payment-btn button:hover {
+      opacity: 0.8;
+    }
+    .Cancel-btn {
+      margin-top: 1.5rem;
+    }
+    .Cancel-btn a {
+      color: hsl(0, 0%, 50%);
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .Cancel-btn a:hover {
+      color: hsl(223, 47%, 23%);
+    }
+
+    @media only screen and (max-width: 376px) { 
+      
+        .card-con {
+          max-width: 340px;
+          height: 600px;
+        }
+        .card-con img {
+          width: 100%;
+        }
+        .card-info h3 {
+          font-size: 1.5rem;
+        }
+        .card-info p {
+          font-size: 14px;
+        }
+        .Plan-box {
+          padding: 1rem;
+        }
+        .Plan-Price {
+          margin-right: 50px;
+        }
+        .Payment-btn button {
+          padding: 1rem 4rem;
+        }
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="con">
+    <div class="card-con">
+        <div class="img">
+          <img src="/order-summary-component-main/images/illustration-hero.svg" alt="">
+        </div>
+        <div class="card-info">
+          <h3>Order Summary</h3>
+          <p>You can now listen to millions of songs, <br> audiobooks, and podcasts on any 
+            device <br> anywhere you like!</p>
+        </div>
+        <div class="Plan-con">
+          <div class="Plan-box">
+            <div class="Plan-img">
+              <img src="/order-summary-component-main/images/icon-music.svg" alt="">
+            </div>
+            <div class="Plan-Price">
+              <h4>Annual Plan</h4>
+              <p>$59.99/year</p>
+            </div>
+            <div class="Plan-change">
+              <a href="#">Change</a>
+            </div>
+          </div>
+        </div>
+        <div class="Plan-btn-box">
+          <div class="Payment-btn">
+            <button type="submit">Proceed to Payment</button>
+          </div>
+          <div class="Cancel-btn">
+            <a href="#">Cancel Order</a>
+        </div>
+        </div>
+    </div>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
